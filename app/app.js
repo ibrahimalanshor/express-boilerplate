@@ -6,7 +6,7 @@ const morgan = require('morgan');
 const { createHandleError, createPolyglot } = require('./helpers');
 
 function createApp(config = {}) {
-  const { setupMiddleware, setupRoute, container } = config;
+  const { setupMiddleware, setupRoute } = config;
   const app = express();
 
   app.set('port', config.port || 4000);
