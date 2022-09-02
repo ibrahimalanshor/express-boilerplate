@@ -1,0 +1,15 @@
+{
+  "name": "express-boilperplate",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bottlejs": "^2.0.1",
+    "express": "^4.18.1"
+  }
+}
