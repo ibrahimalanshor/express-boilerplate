@@ -6,7 +6,7 @@ const morgan = require('morgan');
 const { createHandleError, createPolyglot } = require('./helpers');
 
 function createApp(config = {}) {
-  const { middlewares = [], routes = [] } = config;
+  const { setupMiddleware, setupRoute, container } = config;
   const app = express();
 
   app.set('port', config.port || 4000);
@@ -21,11 +21,8 @@ function createApp(config = {}) {
 
   app.use(createPolyglot());
 
-  for (const middleware of middlewares) {
-    app.use(middleware);
-  }
-
-  app.use(routes);
+  setupMiddleware && setupMiddleware(app)
+  setupRoute && setupRoute(app)
 
   app.use(
     createHandleError({

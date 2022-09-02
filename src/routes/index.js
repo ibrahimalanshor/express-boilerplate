@@ -1,5 +1,5 @@
-const createAuthRoute = require('./auth.route.js');
+const createTestRoute = require('./test.route.js');
 
-module.exports = (router, container) => {
-  createAuthRoute(router, container)
+module.exports = (router) => {
+  createTestRoute(router)
 };

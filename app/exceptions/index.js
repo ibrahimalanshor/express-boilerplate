@@ -1,8 +1,6 @@
-module.exports = {
-  HttpException: require('./http.exception.js'),
-  UnprocessableEntityException: require('./unprocessable-entity.exception.js'),
-  ConflictException: require('./conflict.exception.js'),
-  NotFoundException: require('./not-found.exception.js'),
-  UnauthorizedException: require('./unauthorized.exception.js'),
-  ForbiddenException: require('./forbidden.exception.js'),
-};
+exports.HttpException = require('./http.exception.js')
+exports.UnprocessableEntityException = require('./unprocessable-entity.exception.js')
+exports.ConflictException = require('./conflict.exception.js')
+exports.NotFoundException = require('./not-found.exception.js')
+exports.UnauthorizedException = require('./unauthorized.exception.js')
+exports.ForbiddenException = require('./forbidden.exception.js')

@@ -31,4 +31,4 @@ Container.prototype.get = function (name) {
   return this.depedencies[name]
 }
 
-module.exports = Container
+module.exports = new Container

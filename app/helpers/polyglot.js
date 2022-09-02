@@ -1,5 +1,5 @@
 const Polyglot = require('node-polyglot');
-const messages = require('../../i18n');
+const messages = require('../../resources/i18n');
 
 function createPolyglot() {
   return (req, res, next) => {

@@ -1,25 +1,15 @@
-const express = require('express')
-const createAuthRoute = require('./src/routes/auth.route.js')
+const createApp = require('./app/app.js')
+const config = require('./config');
+const setupRoute = require('./src/routes')
+const setupMiddleware = require('./src/middlewares/global')
 
-const server = express()
+require('./src/providers')
 
-const createAuthController = require('./src/controllers/auth.controller.js')
-const createAuthService = require('./src/services/auth.service.js')
-const Container = require('./bottle.js')
-
-const app = new Container
-
-const userModel = {
-  find: () => 'anjay'
-}
-
-app.register('gue', 'sheez') 
-app.register('UserModel', userModel)
-app.factory('AuthService', createAuthService, { userModel: 'UserModel' })
-app.factory('AuthController', createAuthController, { authService: 'AuthService' })
-
-createAuthRoute(server, app)
-
-server.listen(4000, () => {
-  console.log('server running')
+const server = createApp({
+  env: config.env,
+  port: config.app.port,
+  setupRoute,
+  setupMiddleware
 })
+
+server.run()
