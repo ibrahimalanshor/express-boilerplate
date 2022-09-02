@@ -1,3 +1,3 @@
 module.exports = {
-    en: require('./en.js'),
+  en: require('./en.js'),
 };

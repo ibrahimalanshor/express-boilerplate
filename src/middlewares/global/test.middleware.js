@@ -1,5 +1,5 @@
 module.exports = (req, res, next) => {
-    console.log('test middleware')
+  console.log('test middleware');
 
-    next()
-}
+  next();
+};

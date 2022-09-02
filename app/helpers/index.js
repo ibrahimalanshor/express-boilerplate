@@ -1,2 +1,2 @@
-exports.createHandleError = require('./handle-error.js')
-exports.createPolyglot = require('./polyglot.js')
+exports.createHandleError = require('./handle-error.js');
+exports.createPolyglot = require('./polyglot.js');

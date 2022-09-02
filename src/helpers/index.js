@@ -1,1 +1,1 @@
-exports.createRequestValidator = require('./request-validator.helper.js')
+exports.createRequestValidator = require('./request-validator.helper.js');

@@ -1,1 +1,1 @@
-exports.polyglot = require('./polyglot.middleware.js')
+exports.polyglot = require('./polyglot.middleware.js');

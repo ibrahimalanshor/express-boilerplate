@@ -1,1 +1,1 @@
-exports.stringToBoolean = require('./string-to-boolean.js')
+exports.stringToBoolean = require('./string-to-boolean.js');

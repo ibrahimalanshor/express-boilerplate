@@ -1,7 +1,7 @@
-const testMiddleware = require('./test.middleware.js')
+const testMiddleware = require('./test.middleware.js');
 
 module.exports = (router) => {
-    const middlewares = [testMiddleware]
+  const middlewares = [testMiddleware];
 
-    middlewares.forEach(middleware => router.use(middleware))
+  middlewares.forEach((middleware) => router.use(middleware));
 };

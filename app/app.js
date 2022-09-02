@@ -21,8 +21,8 @@ function createApp(config = {}) {
 
   app.use(createPolyglot());
 
-  setupMiddleware && setupMiddleware(app)
-  setupRoute && setupRoute(app)
+  setupMiddleware && setupMiddleware(app);
+  setupRoute && setupRoute(app);
 
   app.use(
     createHandleError({

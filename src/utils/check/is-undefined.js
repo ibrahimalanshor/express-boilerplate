@@ -1,4 +1,3 @@
 module.exports = (val) => {
-    return val === undefined;
-  };
-  
+  return val === undefined;
+};
